@@ -10,6 +10,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dll_test", "dll_test\dll_te
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "matrix_reader", "matrix_reader\matrix_reader.vcxproj", "{4A3E69E6-390F-4456-A30A-79C6E199EE6B}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "string", "string\string.vcxproj", "{79FC3FE8-C293-47DA-9B27-0B274C345BC8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -28,6 +30,10 @@ Global
 		{4A3E69E6-390F-4456-A30A-79C6E199EE6B}.Debug|Win32.Build.0 = Debug|Win32
 		{4A3E69E6-390F-4456-A30A-79C6E199EE6B}.Release|Win32.ActiveCfg = Release|Win32
 		{4A3E69E6-390F-4456-A30A-79C6E199EE6B}.Release|Win32.Build.0 = Release|Win32
+		{79FC3FE8-C293-47DA-9B27-0B274C345BC8}.Debug|Win32.ActiveCfg = Debug|Win32
+		{79FC3FE8-C293-47DA-9B27-0B274C345BC8}.Debug|Win32.Build.0 = Debug|Win32
+		{79FC3FE8-C293-47DA-9B27-0B274C345BC8}.Release|Win32.ActiveCfg = Release|Win32
+		{79FC3FE8-C293-47DA-9B27-0B274C345BC8}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

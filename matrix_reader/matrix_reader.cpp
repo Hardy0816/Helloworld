@@ -16,6 +16,7 @@ int main()
 	infile.open("..\\bin\\matrix.txt");
 	if(infile.is_open())
 	{
+
 		while(infile.good()&& !infile.eof())
 		{
 			memset(buf,0,1024);
