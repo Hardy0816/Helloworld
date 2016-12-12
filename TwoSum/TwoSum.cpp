@@ -1,35 +1,38 @@
 #include <iostream>
 #include <string>
+#include<iomanip>
 
-int twosum(int data[],int target,int len);
-
+int* twoSum(int data[],int numsSize,int target);
 
 int main()
 {
-	int arr[7]={1,9,7,8,1,2,7};
-	int sum=8;
-	twosum(arr,sum,sizeof(arr)/sizeof(int));
+	int arr[3]={3,2,4};
+	int sum=6;
+	int* output;
+	output=twoSum(arr,sizeof(arr)/sizeof(int),sum);
+	std::cout<<*output<<","<<*(output+1)<<std::endl;
+	delete[] output;
 	return 0;
 }
 
-int twosum(int data[],int target,int len)
+int* twoSum(int* nums,int numsSize,int target)
 {
-	int i=0,j=1,k=0;
-	while(i<len)
+	int *result = new int[2];
+	
+	for(int i = 0, j = 0; i < numsSize; i++)
 	{
-		j=i+1;
-		while(j<len)
+		j = i + 1;
+		for(; j < numsSize; j++)
 		{
-			if((data[i]+data[j])==target)
+			if((nums[i]+nums[j])==target)
 			{
-				k++;
-				std::cout<<i<<" "<<j<<std::endl;
+				result[0] = i;
+				result[1] = j;
+				return result;
 			}
-			j++;
 		}
-		i++;
 	}
-	std::cout<<"有"<<k<<"组的和等于Target";
-	return 0;
+	return result;
+
 }
 

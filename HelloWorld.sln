@@ -16,6 +16,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "stock", "stock\stock.vcxpro
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TwoSum", "TwoSum\TwoSum.vcxproj", "{23CACCB8-D4F4-4A6A-8C90-E8A49112E660}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pointer", "pointer\pointer.vcxproj", "{41CFD6B8-D65D-4BE1-B9CD-6FA7247E6FCB}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "mytime", "mytime\mytime.vcxproj", "{CE6169FE-53B8-429B-9DDC-9F95D744000C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -46,6 +50,14 @@ Global
 		{23CACCB8-D4F4-4A6A-8C90-E8A49112E660}.Debug|Win32.Build.0 = Debug|Win32
 		{23CACCB8-D4F4-4A6A-8C90-E8A49112E660}.Release|Win32.ActiveCfg = Release|Win32
 		{23CACCB8-D4F4-4A6A-8C90-E8A49112E660}.Release|Win32.Build.0 = Release|Win32
+		{41CFD6B8-D65D-4BE1-B9CD-6FA7247E6FCB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{41CFD6B8-D65D-4BE1-B9CD-6FA7247E6FCB}.Debug|Win32.Build.0 = Debug|Win32
+		{41CFD6B8-D65D-4BE1-B9CD-6FA7247E6FCB}.Release|Win32.ActiveCfg = Release|Win32
+		{41CFD6B8-D65D-4BE1-B9CD-6FA7247E6FCB}.Release|Win32.Build.0 = Release|Win32
+		{CE6169FE-53B8-429B-9DDC-9F95D744000C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CE6169FE-53B8-429B-9DDC-9F95D744000C}.Debug|Win32.Build.0 = Debug|Win32
+		{CE6169FE-53B8-429B-9DDC-9F95D744000C}.Release|Win32.ActiveCfg = Release|Win32
+		{CE6169FE-53B8-429B-9DDC-9F95D744000C}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
