@@ -3,49 +3,44 @@
 //#include "ZigZag_conversion.h"
 using namespace std;
 
+string convert(string s, int numRows) 
+{
+	
+	string str="";
+	int number=s.length();
+	if(numRows<2||number<2)
+		return s;
+    for(int i=0,k=0;i<numRows;i++)
+	{
+
+		if(i==0||i==numRows-1)
+			for(int j=0;j<number/(2*numRows-2)+1;j++)
+			{
+				if((i+j*(2*numRows-2))<number)
+				str+=s[i+j*(2*numRows-2)];
+			}
+		if(i>0&&i<numRows-1)
+		{
+			for(int j=0;j<number/(2*numRows-2)+1;j++)
+			{
+				if((i+j*(2*numRows-2))<number)
+				str+=s[i+j*(2*numRows-2)];
+				if((i+2*numRows-4-k+j*(2*numRows-2))<number)
+				str+=s[i+2*numRows-4-k+j*(2*numRows-2)];
+			}
+			k=k+2;
+		}
+		
+	}
+
+    return str;
+}
 void main() 
 {
-	string s="abcdefg";
+	string s0="ABCDE";
 	string da="";
-	int numRows=3;
-	string str="";
-	string data[3];
-	int number=s.length();
-	//string **data;
-	//data = new string*[number] ;  
- //   for(int k = 0 ; k <numRows; k ++ )
-	//{
-	//	data[k] = new string[number];
-	//}
-
-    for(int i=0, j=0, m=0, n=0;(m<number/(2*numRows-2)+1);m++)//m对应周期数，n对应字符串的序号
-	{
-		j+=m*(numRows-1);
-		for(i=0;i<numRows;i++,n++)
-		{
-			if(n==number)
-			{break;}
-			data[i][j]=s[n];
-		}
-		//i=numRows-2;
-		j=j+1;
-		for(i=0;i<numRows-2;i++,j++,n++)
-		{
-			if(n==number)
-			{break;}
-			data[numRows-2-i][j]=s[n];
-
-		}
-		if(n==number)
-		{exit;}
-	}
-	for(int i=0;i<numRows;i++)
-	{
-		for(int j=0;j<number;j++)
-		{
-			str+=data[i][j];
-		}
-	}
-	cout<<str;
+	int numRows=4;
+	da = convert(s0,numRows);
+	cout<<da;
     
 }
