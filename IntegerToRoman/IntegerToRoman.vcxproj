@@ -11,9 +11,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{7F36C145-3E44-4F1D-970E-31E045B6F446}</ProjectGuid>
+    <ProjectGuid>{781E3374-3467-4111-8DDD-2DD815BA87DE}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>stock</RootNamespace>
+    <RootNamespace>IntegerToRoman</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -74,14 +74,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="stcktp1.h" />
-    <ClInclude Include="stock.h" />
-    <ClInclude Include="stocktp.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="stacktem.cpp" />
-    <ClCompile Include="stock.cpp" />
-    <ClCompile Include="usestock.cpp" />
+    <ClCompile Include="IntegerToRoman.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
